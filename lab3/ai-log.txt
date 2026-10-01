@@ -1,0 +1,19 @@
+**The AI tool you used**
+Qwen (AI Coding Assistant)
+
+**Your first website-building prompt**
+"I need help building a car modification website using HTML and CSS in VS Code. Let's work step-by-step, do not generate the whole site at once. For the first step, create a header with an image slideshow of modified cars (I will add the images to an 'images' folder later). Overlay text slightly on top of the slideshow. Stop there so we can review before moving to the body."
+
+**A revised prompt showing the Adaptive part of CLEAR**
+"Context update: My actual project folder structure is different than the default assumption. The CSS file is located inside a 'styles' folder and is named 'main.css', rather than being in the root directory. Please adapt the HTML `<link>` tag and all future file path references to match this specific context (`styles/main.css`)."
+
+
+**One debugging or code-review prompt**
+"I've implemented the code, but the styling isn't applying and the slideshow images aren't showing up. The page just looks like plain, unstyled text (see attached screenshot). Please review the code and help me debug why the CSS and images are failing to load."
+
+**Your agentic-style review prompt**
+"Act as a web architect. Before writing any code for the second page ('details.html'), I need you to propose and analyze the structural layout for three specific car build breakdowns (RX-8 Drift, Skyline Touge, ISF Time-Attack). For each, include a use-case explanation, part selection reasoning, and a placeholder for YouTube embeds. Present the structural options to me for review and approval before generating the actual HTML."
+
+
+**A short reflection explaining one thing the AI did well and one thing you had to correct or change**
+"The AI did an excellent job of respecting my boundary to work step-by-step, and it generated highly detailed, well-reasoned content for the car build breakdowns without rushing ahead. However, I had to correct it when it assumed a standard root-level CSS file structure; I had to explicitly adapt my prompt to clarify my specific 'styles/main.css' folder hierarchy to fix the broken, unstyled layout."
