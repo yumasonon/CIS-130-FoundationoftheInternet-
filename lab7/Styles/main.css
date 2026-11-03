@@ -1,0 +1,167 @@
+*{
+box-sizing: border-box;
+}
+
+.content-box {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 10px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: #AA6CF5;
+}
+
+.page-layout{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+}
+
+.main-content{
+    flex-basis: 65%;
+    padding-right: 1em;
+}
+
+.sidebar{
+    flex-basis: 35%;
+    padding: 1em;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: #AA6CF5;
+}
+
+
+:root{
+    --primary-color:#AA6CF5;
+   
+   
+}
+
+main{
+    clear: both;
+}
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, monospace, fantasy;
+    font-size: 100%;
+    line-height: 2;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+
+
+h1 {
+    color:rgb(137, 241, 252);
+    font-size:200%;
+    text-decoration: dotted;
+}
+
+h2 {
+    color: rgb(137, 241, 252);
+    font-size: 150%;
+}
+
+.important{
+    font-weight: bold;
+    font-size: 200%;
+}
+
+
+#copyright {
+   
+    font-size: 80%;
+    color:var(--primary-color);
+}
+
+footer p {
+    text-align: right;
+}
+
+header {
+    padding-bottom: 2em;
+    border-bottom: 7px solid black;
+}
+
+main section p2{
+    font-weight: bold;
+}
+
+img {
+    float:right;
+    margin-left: 1em; 
+    max-width: 100%; 
+}
+
+a:link{
+    color:var(--primary-color);
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+a:focus{
+    color: red;
+}
+
+a:hover{
+    color: red;
+}
+
+li:first-child{
+    font-weight: bold;
+    
+}
+
+li:last-child{
+    font-style: italic;
+}
+
+.navbar { background-color: black;}
+
+.navbar a {
+    display:block;
+    padding: .75em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar a:focus-visible {
+    text-decoration: underline;
+    background-color:#AA6CF5;
+}
+
+.navbar a.current, .navbar a:focus-visible {
+    background-color:#AA6CF5;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.menu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li { position: relative; }
+.submenu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 10;
+min-width: 11rem;
+margin: 0;
+padding: 0;
+list-style: none;
+background-color: #243447;
+}
+.has-submenu:hover > .submenu,
+.has-submenu:focus-within > .submenu {
+display: block;
+}
